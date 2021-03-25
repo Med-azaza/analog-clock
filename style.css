@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+#container {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid chartreuse;
+}
+#circle {
+    height: 350px;
+    width: 350px;
+    border: 10px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#point {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 10;
+}
+#sec-stick,#min-stick {
+    height: 140px;
+    width: 10px;
+    background-color: gray;
+    position: absolute;
+    border-radius: 6px;
+    bottom: 50%;
+    transform-origin: 50% 100%;
+}
+#min-stick {
+    height: 100px;
+    background-color: darkslategrey;
+}
