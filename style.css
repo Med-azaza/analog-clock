@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
 }
 body {
     display: flex;
@@ -9,6 +10,10 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
+    background: radial-gradient(circle,rgb(255,0,156) 10%,rgb(91,20,111) 30%);
+}
+#main {
+    position: relative;
 }
 #container {
     width: 400px;
@@ -16,7 +21,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid chartreuse;
 }
 #circle {
     height: 350px;
@@ -27,10 +31,11 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    box-shadow: inset 0px 0px 20px black,0px 0px 20px black;
 }
 #point {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     background-color: black;
     border-radius: 50%;
     z-index: 10;
@@ -38,7 +43,7 @@ body {
 #sec-stick,#min-stick {
     height: 140px;
     width: 10px;
-    background-color: gray;
+    background-color: rgb(91,20,111);
     position: absolute;
     border-radius: 6px;
     bottom: 50%;
@@ -46,5 +51,25 @@ body {
 }
 #min-stick {
     height: 100px;
-    background-color: darkslategrey;
+    background-color: rgb(39, 6, 48);
+}
+#time {
+    height: 40px;
+    width: 100px;
+    background-color: #1565c0;
+    box-shadow: 0 0 10px #1565c0;
+    position: absolute;
+    top: 75%;
+    z-index: -1;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: rgb(233, 37, 37);
+}
+.text {
+    position: absolute;
+    text-align: center;
+    width: 400px;
 }

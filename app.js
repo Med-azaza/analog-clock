@@ -4,6 +4,7 @@ $(function (){
         let s=d.getSeconds();
         let h=d.getHours();
         let m=d.getMinutes();
+        $('#time').html(h.toString()+':'+m.toString());
         s*=6;
         h*=30;
         h+=m/2;
