@@ -73,3 +73,9 @@ body {
     text-align: center;
     width: 400px;
 }
+
+@media (max-width:768px){
+    body {
+        background: radial-gradient(circle,rgb(255,0,156) 10%,rgb(91,20,111) 60%);
+    }
+}
