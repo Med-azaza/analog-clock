@@ -43,7 +43,7 @@ body {
 #sec-stick,#min-stick {
     height: 140px;
     width: 10px;
-    background-color: rgb(91,20,111);
+    background-color: rgba(91,20,111,0.8);
     position: absolute;
     border-radius: 6px;
     bottom: 50%;
@@ -51,7 +51,7 @@ body {
 }
 #min-stick {
     height: 100px;
-    background-color: rgb(39, 6, 48);
+    background-color: rgba(39, 6, 48,0.7);
 }
 #time {
     height: 40px;
@@ -59,7 +59,7 @@ body {
     background-color: #1565c0;
     box-shadow: 0 0 10px #1565c0;
     position: absolute;
-    top: 75%;
+    top: 79%;
     z-index: -1;
     border-radius: 7px;
     display: flex;
